@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
+
+
+  <style>
+
+    .logo{
+      height: 6.5rem;
+      padding: 10px;
+      border: solid rgb(97, 240, 156);
+      border-radius: 5px;
+      margin-bottom: 70px;
+      
+      background-image: url(./images/WhatsApp\ Image\ 2024-07-08\ at\ 9.16.40\ PM.jpeg);
+            
+    }
+    #section1{
+      background: linear-gradient(300deg, #222831,#393E46, #00ADB5, #EEEEEE );
+      background-size: 180% 180%;
+      animation: gradient-animation 10s ease infinite;
+    }
+
+    @keyframes gradient-animation {
+      0% {
+      background-position: 0% 50%;
+      }
+      50% {
+      background-position: 100% 50%;
+      }
+      100% {
+      background-position: 0% 50%;
+      }
+    }
+
+          
+          
+        
+    .name{
+      font-family: "Satisfy", cursive;
+      font-weight: bolder;
+      color: white;
+      font-size: 30px;
+
+    }
+    .programmer{
+      font-family: "Lobster Two", sans-serif;
+      font-size: 35px;
+      height: 15px;
+      margin-top: 10px;
+      margin-bottom: 40px;
+      
+      color: white;
+          
+    }
+    .iam{
+      font-family: "Pacifico", cursive;
+      font-weight: bolder;
+      font-size: 20px;
+      
+      margin-top: 20px;
+      color: white;
+
+    }
+    p{
+      padding: 10px;
+      color: white;
+    }
+    .pro{
+      text-decoration:underline;
+      color: rgb(255, 255, 255);
+    }
+    .firstpage{
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      gap: 10px;
+    }
+    @media (max-width: 768px){
+     .firstpage {
+      grid-template-columns: 200fr ;
+    }
+    }
+    .about{
+      grid-column-start:2 ;
+      grid-column-end:3 ;
+      color: white;
+    }
+    .intreducation{
+      display: grid;
+      grid-template-columns: 200px 200px;
+      gap: 50px;
+      color: white;
+      margin-top: 20px;
+         
+    }
+
+    @media (max-width: 768px){
+     .intreducation {
+      grid-template-columns: 200px ;
+    }
+    }
+    .dp{
+      background-image: url(./images/WhatsApp\ Image\ 2024-07-08\ at\ 9.18.15\ PM\ \(2\).jpeg);
+      filter: drop-shadow(1px 1px 40px yellow);
+    }
+    .I{
+      color: rgb(252, 143, 0);
+    }
+    .navbar-brand{
+      font-weight: bold;
+    }
+    button :hover{
+      filter: drop-shadow(0 0 10px rgb(70, 243, 200));
+    }
+    .nav-link {
+      transition: color 1s ease-in-out;
+      position: relative;
+    }
+
+    .nav-link::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #007bff;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before {
+     transform: scaleX(1);
+    }
+
+    .nav-link:hover {
+      color:#007bff;
+    }
+
+    .dropdown-item {
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    .dropdown-item:hover {
+      background-color: #007bff;
+      color: #ffffff;
+    }
+
+    .dropdown-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      transform: scaleY(0);
+      transition: transform 0.5s ease-in-out;
+   }
+
+    .dropdown-item:hover::before {
+      transform: scaleY(1);
+    }
+
+    .svg{
+       margin-right: 5px;
+      margin-bottom: 4px;
+
+    }
+    .button {
+      --main-focus: #2d8cf0;
+      --font-color: #dedede;
+      --bg-color-sub: #222;
+      --bg-color: #323232;
+      --main-color: #dedede;
+      position: relative;
+      width: 170px;
+      height: 40px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      border: 2px solid var(--main-color);
+      box-shadow: 4px 4px var(--main-color);
+      background-color: var(--bg-color);
+      border-radius: 10px;
+      overflow: hidden;
+   }
+
+    .button, .button__icon, .button__text {
+       
+      transition: all 0.5s;
+   }
+
+    .button .button__text {
+      transform: translateX(21px);
+      color: var(--font-color);
+      font-weight: 600;
+   }
+
+    .button .button__icon {
+      position: absolute;
+      transform: translateX(109px);
+      height: 100%;
+      width: 39px;
+      background-color: var(--bg-color-sub);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 15px;
+  
+    }
+
+    .button .svg {
+      width: 20px;
+      fill: var(--main-color);
+       
+    }
+
+   .button:hover {
+     background: var(--bg-color);
+   }
+
+   .button:hover .button__text {
+     color: transparent;
+   }
+
+    .button:hover .button__icon {
+        width: 148px;
+        transform: translateX(0);
+    }
+
+    .button:active {
+        transform: translate(3px, 3px);
+        box-shadow: 0px 0px var(--main-color);
+    }
+    .li{
+      font-weight: bolder;
+      
+    }
+    .section2{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+    }
+    
+
+
+
+
+    
+
+  </style>
+</head>
+<body>
+    <section id="section1" >
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><span class="I">I</span>nthisham</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Bio">Bio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section2">Hobbie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#section3">Skill</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#section4">Travalled places</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Visit
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.instagram.com/mohd_inthisham___/" target="_blank">instagram</a></li>
+                  <li><a class="dropdown-item" href="https://github.com/Inthisham9778" target="_blank">GitHub</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://x.com/inthisham_p" target="_blank">Twitter</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+        <div id="Bio" class="container ">
+
+        
+          <div class="firstpage">
+            <div class="name-section " style="margin-left: 70px;"> 
+              <img class="dp" style="height: 150px; width: 150px; border-radius:50% ; border: solid gray; padding: 10px; margin-top: 100px; " src="./images/photo_2024-07-08_15-31-30.jpg" alt="Inthisham">
+              <h2 class="iam">HI!....I'M</h2>
+              <h1 class="name"> MOHD INTHISHAM P</h1>
+              <h2 class="programmer"><span class="pro">PRO</span>grammer</h2>
+              <img class="logo" src="./images/logos.png" alt="html css java script" >
+            </div>
+          
+            <div class="container ">
+              <div class="p-5 mb-4 rounded-3 aboutme">
+                <div class=" py-5 ">
+                  <div class="about " style="margin-top: 50px;">
+                    <h2 class="display-5 fw-bold " style="font-size: 25px;">ABOUT ME</h2>
+                    <p class=" paragraph col-md-8 col-sm-8 fs-10 fw-bold">Hi there! I'm Mohammed Inthisham P, but feel free to call me Monu. I hail from Karuvarakundu, a quaint town in Punnakkad Chungam, Kerala. I'm a proud alumnus of Calicut University, where I graduated with a Bachelor of Science in Physics.
+
+                    </p>
+                    <button type="button" class="button">
+                      <span class="button__text" >Download CV</span>
+                      <span class="button__icon"><svg class="svg" data-name="Layer 2" id="bdd05811-e15d-428c-bb53-8661459f9307" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+                    </button>
+                  </div>  
+                  <div class="intreducation">
+                    <div class="intrested">
+                      <h3 style="font-size: 25px; font-weight: bold; margin-left: 10px;"> INTRESTED</h3>
+                      <ul class="intrestedthings list">
+                        <li>
+                          Programming
+                        </li>
+                        <li>
+                          To Make New WEBSITES
+                        </li>
+                        <li>
+                          Listening Songs
+                        </li>
+                        <li>
+                          Play Games 
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="education">
+                      <h3 style="font-size: 25px; font-weight: bold; margin-left: 10px">EDUCATION</h3>
+                      <ul class="educationthings li">
+                        <li>Bachelor of Science in Physics
+                          Calicut University
+                        </li>
+                        <li>MERN stack</li>
+                        <li>Flutter </li>
+                        
+                      </ul>
+                    </div>  
+                  </div>
+                  
+              </div>
+                  
+              </div>
+            </div>  
+          </div>  
+        </div>  
+      
+
+    </section>
+
+   
+
+
+
+    <section id="section2">
+      <div class="container px-4 py-5 " id="custom-cards">
+        <h2 class="pb-2 border-bottom hobbie">HOBBIES</h2>
+    
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/travelling\ gif.gif');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Travelling </h3>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/football\ gif.gif'); background-size: cover;background-position: center; height: 100%; width: 100%;">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Football</h3>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/reading.gif');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Reading books</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/cooking.gif'); ;">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Cooking</h3>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/eating.gif');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Eating</h3>
+              </div>
+            </div>
+          </div>
+    
+
+        </div>
+        </div>
+      </div>
+      </div>
+
+
+    </section>
+
+
+
+    
+    <section id="section3" >
+      <div class="container px-4 py-5">
+          <div>
+            <h2 class="H-skill border-bottom pb2 ">SKILLS</h2>
+          </div>
+
+        <div class=" skill mt-5">
+
+          <img src="./images/computer programming.avif" alt="Computer Programming">
+          <img src="./images/singing.avif" alt="Singing">
+          <img src="./images/web design.jpg" alt="Web Design">
+          <img src="./images/Communication.jpg" alt="Communication">
+        </div>
+      </div>
+
+    </section>
+
+
+    
+
+
+  <section id="section4">
+    <div class="container">
+      <div>
+        <h2 class="H-travelled-places border-bottom pb2  py-5 px-4  ">TRAVALLED PLACES</h2>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner py-5 px-5">
+          <div class="carousel-item active">
+            <img src="./images/kshmir.webp" class="d-block w-100 " alt="kashmir">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/thajmahal.1.png" class="d-block w-100 " alt="delhi">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/ladak.1.jpg" class="d-block w-100 " alt="ladak">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/goa.1.png" class="d-block w-100 " alt="goa">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+
+
+      <footer id="footer">
+        <div class="container">
+          <footer class="py-5 px-6 ">
+            <ul class="nav justify-content-center border-bottom pb-3 footer-ul">
+              <li class="nav-item"><a href="#" class="nav-link px-3 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+              </svg></a></li>
+              <li class="nav-item"><a href="https://www.instagram.com/mohd_inthisham___/"target="_blank" class="nav-link px-3 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg></a></li>
+              <li class="nav-item"><a href="https://x.com/inthisham_p"target="_blank" class="nav-link px-3 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+              </svg></a></li>
+              <li class="nav-item"><a href="https://github.com/Inthisham9778"target="_blank" class="nav-link px-3 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+              </svg></a></li>
+              <li class="nav-item"><a href="https://www.linkedin.com/in/mohammed-inthisham-p-3b25b7319/"target="_blank" class="nav-link px-3 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+              </svg></a></li>
+            </ul>
+            <p class="text-center text-muted">© 2024 mohd_inthisham___</p>
+          </footer>
+        </div>
+        
+
+          
+      </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
